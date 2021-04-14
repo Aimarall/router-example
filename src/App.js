@@ -15,7 +15,7 @@ function App() {
       <a href="/contacts" >Contacts</a>
     
 
-      <Route path="/" component={Home} />
+      <Route path="/" component={Home} exact/>
       <Route path="/about" component={About} />
       <Route path="/contacts" component={Contacts} />
      
