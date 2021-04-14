@@ -9,6 +9,10 @@ import Home from "./components/Home/Home";
 function App() {
   return (
     <div className="App">
+      <a href="/" >About</a>
+      <a href="/contacts" >Contacts</a>
+      <a href="/home" >Home</a>
+
       <About />
       <Contacts />
       <Home />
