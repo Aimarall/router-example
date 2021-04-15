@@ -13,6 +13,11 @@ const Posts = ({ match }) => {
             {match.isExact 
             ? <ul>{results}</ul>
             : <Route path="/posts/:id" component={FullPost} />}
+
+            <div>
+                <h1>How are you</h1>
+                <p>deleted no needed word of the files</p>
+            </div>
         </div>
     );
 }
