@@ -21,7 +21,7 @@ const Mountain = ({ }) => {
         <li>1.Mountain</li>
         <li>2.Water of the mountain</li>
         <li>3.Tropic</li>
-       
+
       </ul>
     </div>
   );
