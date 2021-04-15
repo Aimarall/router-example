@@ -11,7 +11,7 @@ import Hot from "./components/Hot/Hot";
 import Could from "./components/Could/Could";
 import Mountain from "./components/Mountain/Mountain";
 import Earth from "./components/Earth/Earth";
-import Kosmos from "./components/Kosmos/Kosmos";
+import Space from "./components/Space/Space";
 
 
 
@@ -29,7 +29,7 @@ function App() {
         <Link to="/could" >Could</Link>
         <Link to="/mountain" >Mountain</Link>
         <Link to="/earth" >Earth</Link>
-        <Link to="/kosmos" >Kosmos</Link>
+        <Link to="/space" >Space</Link>
       </div>
 
 
@@ -43,7 +43,7 @@ function App() {
       <Route path="/could" component={Could} />
       <Route path="/mountain" component={Mountain} />
       <Route path="/earth" component={Earth} />
-      <Route path="/kosmos" component={Kosmos} />
+      <Route path="/space" component={Space} />
 
     </div>
   );

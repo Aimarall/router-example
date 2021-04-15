@@ -11,7 +11,11 @@ p {
   
 }
 .Navigations {
+  line-height: none;
   word-spacing: 5px;
+}
+.Navigations:hover {
+  background-color: coral;
 }
 
 .App {
