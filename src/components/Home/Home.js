@@ -22,6 +22,13 @@ const Home = ({ }) => {
         The home as a concept expands beyond residence as contemporary lifestyles and technological advances redefine the way the global population lives and works.
      </p>
 
+     <ul>
+       <li>1.First</li>
+       <li>2.Second</li>
+       <li>3.Third</li>
+       <li>4.Fourth</li>
+     </ul>
+
     </div>
   );
 }
