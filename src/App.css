@@ -5,10 +5,19 @@ h1 {
   font-family: 'Questrial', sans-serif;
   color: blue;
 }
+h2 {
+  font-family: 'Questrial', sans-serif;
+  color: blue;
+}
 p {
   font-family: 'Libre Baskerville', serif;
   color: rgb(57, 57, 80);
-  
+}
+.Paragraphs {
+  color: red;
+}
+strong {
+  color: blue;
 }
 .Navigations {
   line-height: none;
