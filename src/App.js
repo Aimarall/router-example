@@ -1,6 +1,6 @@
-import { Route } from 'react-router';
+import { Redirect, Route, Switch } from 'react-router';
 import './App.css';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
@@ -19,7 +19,8 @@ import Space from "./components/Space/Space";
 function App() {
   return (
     <div className="App">
-      <div className="Navigations">
+
+      {/* <div className="Navigations">
         <Link to="/" >Home</Link>
         <Link to="/about" >About</Link>
         <Link to="/contacts" >Contacts</Link>
@@ -31,19 +32,60 @@ function App() {
         <Link to="/earth" >Earth</Link>
         <Link to="/space" >Space</Link>
       </div>
+ */}
+
+      <ul>
+        <li>
+          <NavLink activeClassName="active" to="/" exact>Home</NavLink>
+        </li>
+        <li>
+          <NavLink activeClassName="active" to="/about" exact>About</NavLink>
+        </li>
+        <li>
+          <NavLink activeClassName="active" to="/contacts" exact>Contacts</NavLink>
+        </li>
+        <li>
+          <NavLink activeClassName="active" to="/water" exact>Water</NavLink>
+        </li>
+        <li>
+          <NavLink activeClassName="active" to="/sun" exact>Sun</NavLink>
+        </li>
+        <li>
+          <NavLink activeClassName="active" to="/hot" exact>Hot</NavLink>
+        </li>
+        <li>
+          <NavLink activeClassName="active" to="/could" exact>Could</NavLink>
+        </li>
+        <li>
+          <NavLink activeClassName="active" to="/mountain" exact>Mountain</NavLink>
+        </li>
+        <li>
+          <NavLink activeClassName="active" to="/earth" exact>Earth</NavLink>
+        </li>
+        <li>
+          <NavLink activeClassName="active" to="/space" exact>Space</NavLink>
+        </li>
+      </ul>
 
 
+      <Switch>
+        <Route path="/" component={Home} exact />
+        <Route path="/about" component={About} />
+        <Route path="/about" render={() => <strong>Hello</strong>} />
+        <Route path="/contacts" component={Contacts} />
+        <Route path="/water" component={Water} />
+        <Route path="/sun" component={Sun} />
+        <Route path="/hot" component={Hot} />
+        <Route path="/could" component={Could} />
+        <Route path="/mountain" component={Mountain} />
+        <Route path="/earth" component={Earth} />
+        <Route path="/space" component={Space} />
+        <Route path="/" render={() => <h1>Page not found</h1>} />
+        {/* <Redirect to="/" /> */}
+      </Switch>
 
-      <Route path="/" component={Home} exact />
-      <Route path="/about" component={About} />
-      <Route path="/contacts" component={Contacts} />
-      <Route path="/water" component={Water} />
-      <Route path="/sun" component={Sun} />
-      <Route path="/hot" component={Hot} />
-      <Route path="/could" component={Could} />
-      <Route path="/mountain" component={Mountain} />
-      <Route path="/earth" component={Earth} />
-      <Route path="/space" component={Space} />
+      <Route path="/about/personal" render={() => <h1>Personal contacts</h1>} />
+      <Route path="/about/business" render={() => <h1>Business contacts</h1>} />
 
     </div>
   );
