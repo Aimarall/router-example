@@ -38,7 +38,8 @@ const Contacts = ({ }) => {
       <Link to="/contacts/personal">Personal</Link>
       <Link to="/contacts/business">Business</Link>
 
-      <Route></Route>
+      <Route path="/about/personal" render={() => <h1>Personal contacts</h1>} />
+      <Route path="/about/business" render={() => <h1>Business contacts</h1>} />
     </div>
   );
 }
