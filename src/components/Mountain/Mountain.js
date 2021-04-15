@@ -1,4 +1,5 @@
 import classes from "./Mountain.module.css";
+import mountain from "../../img/mountain.jpg";
 
 
 const Mountain = ({ }) => {
@@ -15,7 +16,13 @@ const Mountain = ({ }) => {
 
         The highest mountain on Earth is Mount Everest in the Himalayas of Asia, whose summit is 8,850 m (29,035 ft) above mean sea level. The highest known mountain on any planet in the Solar System is Olympus Mons on Mars at 21,171 m (69,459 ft).
      </p>
-
+      <img src={mountain} alt="#" />
+      <ul>
+        <li>1.Mountain</li>
+        <li>2.Water of the mountain</li>
+        <li>3.Tropic</li>
+       
+      </ul>
     </div>
   );
 }
