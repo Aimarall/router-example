@@ -8,6 +8,10 @@ h1 {
 p {
   font-family: 'Libre Baskerville', serif;
   color: rgb(57, 57, 80);
+  
+}
+.Navigations {
+  word-spacing: 5px;
 }
 
 .App {
